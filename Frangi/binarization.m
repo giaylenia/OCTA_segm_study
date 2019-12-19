@@ -59,14 +59,14 @@ dice_ad = zeros(length(orig_paths),1);
 cc_ad = zeros(length(orig_paths),1);
 cc_gt = zeros(length(orig_paths),1);
 
-% CAl measures
+% CAL measures
 cal_ad = zeros(length(orig_paths),1);
 
 % Size of the largest cc
 size_cc_gt = zeros(length(orig_paths),1);
 size_cc_ad = zeros(length(orig_paths),1);
-LCC_ratio = zeros(length(orig_paths),1);
 
+LCC_ratio = zeros(length(orig_paths),1);
 
 %% Enhance images
 for i= 1:length(orig_paths)    
@@ -120,7 +120,7 @@ for i= 1:length(orig_paths)
     CAL = C*A*L;
     cal_ad(i) = CAL;
     
-    LCC_ratio(i) =  1 - (abs( size_cc_ad(i) -  size_cc_gt(i))/ size_cc_gt(i));
+    LCC_ratio(i) =  1 - min(1, (abs( size_cc_ad(i) -  size_cc_gt(i))/ size_cc_gt(i)));
     imwrite(bw_ad, strcat('./', output_dir,'/', NAMES{i}));
 end
 %%
@@ -137,10 +137,6 @@ fprintf('################################################ \n');
 
 fprintf('mean dice threshold: %d \n', mean(dice_ad));
 
-fprintf('mean cc threshold: %d\n', mean(cc_ad))
-fprintf('mean gt ground truth: %d \n', mean(cc_gt))
-
- 
 T = table(NAMES, dice_ad , cc_gt, cc_ad,  size_cc_gt, size_cc_ad, LCC_ratio); 
 writetable(T, 'table_performances.txt')
 

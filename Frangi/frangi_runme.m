@@ -20,7 +20,7 @@
 % To set suitable parameters of the Frangi Filter, run hyperpar_opts.m
 % 
 % REQUIREMENTS:
-% this script require the Hessian based Frangi Vesselness filter available
+% this script requires the Hessian based Frangi Vesselness filter available
 % here:https://uk.mathworks.com/matlabcentral/fileexchange/24409-hessian-based-frangi-vesselness-filter
 % Order files https://uk.mathworks.com/matlabcentral/fileexchange/47434-natural-order-filename-sort
 % -------------------------------------------------------------------------

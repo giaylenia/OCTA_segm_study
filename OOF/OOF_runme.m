@@ -15,10 +15,10 @@
 % folder with images binary images: training/test
 %    
 % REQUIREMENTS:
-% this script require the OOF version inplemented in
+% -this script requires the OOF version inplemented in
 % Ang, L.,Jang, Y., Congwu, D., Yiangtian, P.: Automated segmentation and quantification of OCT angiography for 
-% tracking angiogenesis progression. Biomedical Optic Express \textbf{8}(12), 5604 (2017)
-% Order files https://uk.mathworks.com/matlabcentral/fileexchange/47434-natural-order-filename-sort
+% tracking angiogenesis progression. Biomedical Optic Express \textbf{8}(12), 5604 (2017).
+% -Order files https://uk.mathworks.com/matlabcentral/fileexchange/47434-natural-order-filename-sort
 % -------------------------------------------------------------------------
 
 %% Setup & Clear memory
@@ -63,7 +63,7 @@ range=0.5:0.5:2;
 sigma=0.5; 
 top_hat=0;
 
-%% Appply filter to all images
+%% Apply filter to all images
 for i= 1:length(orig_paths)
     match = '.tif';
     newStr = erase(orig_images(i).name,match);

@@ -1,4 +1,4 @@
-
+# from https://stanford.edu/~shervine/blog/keras-how-to-generate-data-on-the-fly
 
 from keras.utils import to_categorical
 import matplotlib.pyplot as plt

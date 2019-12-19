@@ -3,10 +3,10 @@
 %   - test whole OCTA image
 %   
 % PROCESS:
-%   - This applies Frangi filter to OCTA image
+%   - Apply Frangi filter to OCTA image
 % 
 % REQUIREMENTS:
-% this script require the Hessian based Frangi Vesselness filter available
+% this script requires the Hessian based Frangi Vesselness filter available
 % here:https://uk.mathworks.com/matlabcentral/fileexchange/24409-hessian-based-frangi-vesselness-filter
 % -------------------------------------------------------------------------
   

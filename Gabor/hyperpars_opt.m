@@ -13,7 +13,7 @@
 %   - table with parameters and performances
 
 % REQUIREMENTS:
-% this script requires  morlet wavelet: please contact Tom Macgillivray: tom.macgillivray@ed.acuk
+% this script requires  morlet wavelet: please contact Tom Macgillivray: tom.macgillivray@ed.ac.uk
 % Order files https://uk.mathworks.com/matlabcentral/fileexchange/47434-natural-order-filename-sort
 % -------------------------------------------------------------------------
 %% Setup & Clear memory

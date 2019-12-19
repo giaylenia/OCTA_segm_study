@@ -119,7 +119,7 @@ for i= 1:length(orig_paths)
     CAL = C*A*L;
     cal_ad(i) = CAL;
     
-    LCC_ratio(i) =1 - (abs( size_cc_ad(i) -  size_cc_gt(i))/ size_cc_gt(i));
+    LCC_ratio(i) =  1 - min(1, (abs( size_cc_ad(i) -  size_cc_gt(i))/ size_cc_gt(i)));
     %imwrite(bw_ad, strcat('./', output_dir,'/', NAMES{i}));
 end
 %%
