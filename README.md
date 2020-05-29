@@ -1,11 +1,11 @@
 # Automated OCTA segmentation
-This repository contains the code that has been used in the study described in ..., 
+This repository contains the code that has been used in the study described [here](http://arxiv.org/abs/1912.09978), 
 We proposed for the first time an extensive comparison of blood vessel segmentation methods in Optical Coherence Tomography Angiography (OCTA).
-Each folder represents a vessel enhancement method (Frangi, Gabor, SCIRD-TS, OOF, CNN, and UNet), plus functions to compute quality metrics (CAL). 
+Each folder represents a vessel enhancement method (Frangi, Gabor, SCIRD-TS, OOF, CNN, and UNet), plus measuremnets to compute quality of teh segmentation (CAL, TopS). 
 Folders contain README.md when necessary or comments to guide you through the code.  
 
 ## Data
-Data will be available soon.
+[Link](https://doi.org/10.7488/ds/2729)
  
 ## Programming languages
 The code contains scripts in matlab and python (jupyter notebook). 
@@ -13,12 +13,10 @@ The code contains scripts in matlab and python (jupyter notebook).
 ### Versions
  **Matlab:** MATLAB R2018b
  
- **Python:** 3.6.9
+ **Python:** 3.6.9 (tensorflow-gpu = 1.10.0, tensorflow = 1.12.0)
 
-  **Note:** 
- tensorflow-gpu = 1.10.0
 
- tensorflow = 1.12.0
-
+## Filter requirements
+Implementations of Frangi, Gabor, SCIRD-TS, OOF have been already provided somewhere else. Info can be found in each folder.
 
 
