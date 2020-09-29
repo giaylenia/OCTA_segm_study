@@ -1,7 +1,7 @@
 # Automated OCTA segmentation
-This repository contains the code that has been used in the study described [here](http://arxiv.org/abs/1912.09978), 
+This repository contains the code that has been used in the study described [here](http://arxiv.org/abs/1912.09978). 
 We proposed for the first time an extensive comparison of blood vessel segmentation methods in Optical Coherence Tomography Angiography (OCTA).
-Each folder represents a vessel enhancement method (Frangi, Gabor, SCIRD-TS, OOF, CNN, and UNet), plus measuremnets to compute quality of teh segmentation (CAL, TopS). 
+Each folder represents a vessel enhancement method (Frangi, Gabor, SCIRD-TS, OOF, CNN, and UNet), plus measuremnets to compute quality of teh segmentation (CAL, TopS). CS-Net implementation can be found [here](https://github.com/suyanzhou626/CSNet) 
 Folders contain README.md when necessary or comments to guide you through the code.  
 
 ## Data
