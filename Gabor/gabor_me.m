@@ -1,4 +1,4 @@
-function [outIm, scales, response] = gabor(image, scales, pSize, epsilon, k0y)
+function [outIm, scales, response] = gabor_me(image, scales, pSize, epsilon, k0y)
 
 % Matlab function to apply 2D Gabor filters to an input image
 
